@@ -22,7 +22,7 @@ class GPContest(models.Model):
     division = models.IntegerField()
 
     def __str__(self):
-        return self.district+"|"+self.schoolname
+        return self.district+"|"+self.block+"|"+self.cluster+"|"+self.gram_panchayat
 
 # This is for the Schools with respective contest results
 class School(models.Model):
