@@ -6,7 +6,7 @@ from .serializers import BoundarySerializer, GPContestSerializer
 from django.db.models import Avg
 
 #This api view lists the Boundaries (District, Block, Cluster, Grama Panchayat)
-class BoundarieAPIView(generics.ListAPIView):
+class BoundaryAPIView(generics.ListAPIView):
     lookup_field = 'pk'
     serializer_class = BoundarieSerializer
     queryset = Boundary.objects.all()
