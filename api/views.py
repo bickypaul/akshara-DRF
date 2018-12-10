@@ -2,7 +2,7 @@ from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Boundary, GPContest, School
-from .serializers import BoundarieSerializer, GPContestSerializer
+from .serializers import BoundarySerializer, GPContestSerializer
 from django.db.models import Avg
 
 #This api view lists the Boundaries (District, Block, Cluster, Grama Panchayat)
