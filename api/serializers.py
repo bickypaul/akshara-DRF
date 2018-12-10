@@ -14,7 +14,7 @@ class BoundarieSerializer(serializers.ModelSerializer):
         ]
 
         read_only_fields = [
-            'id',
+            'pk',
             'district',
             'block',
             'cluster',
@@ -27,6 +27,7 @@ class GPContestSerializer(serializers.ModelSerializer):
     class Meta:
         model = GPContest
         fields = [
+            'pk',
             'district',
             'block',
             'cluster',
@@ -38,6 +39,7 @@ class GPContestSerializer(serializers.ModelSerializer):
         ]
 
         read_only_fields = [
+            'pk',
             'district',
             'block',
             'cluster',
