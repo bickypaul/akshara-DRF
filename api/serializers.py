@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Boundary, GPContest
 
 # Boundary Serializers.
-class BoundarieSerializer(serializers.ModelSerializer):
+class BoundarySerializer(serializers.ModelSerializer):
     class Meta:
         model = Boundary
         fields = [
@@ -14,7 +14,7 @@ class BoundarieSerializer(serializers.ModelSerializer):
         ]
 
         read_only_fields = [
-            'id',
+            'pk',
             'district',
             'block',
             'cluster',

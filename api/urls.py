@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import BoundarieAPIView, GPContestAPIView, GPContestAggregateAPIView
+from .views import BoundaryAPIView, GPContestAPIView, GPContestAggregateAPIView
 
 app_name = 'api'
 
 urlpatterns = [
-    path('boundaries/', BoundarieAPIView.as_view(), name='list-boundaries'),
+    path('boundaries/', BoundaryAPIView.as_view(), name='list-boundaries'),
     path('gpcontest/', GPContestAPIView.as_view(), name='list-gpcontest'),
     path('gpcontest/aggregate', GPContestAggregateAPIView.as_view(), name='aggregate-gpcontest'),
 ]

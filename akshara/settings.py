@@ -91,9 +91,9 @@ WSGI_APPLICATION = 'akshara.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'your database name',
-        'USER': 'your database user name',
-        'PASSWORD': 'your database password',
+        'NAME': 'aksharadb',
+        'USER': 'akshara',
+        'PASSWORD': 'akshara1234',
         'HOST': 'localhost',
         'PORT': '',
     }
