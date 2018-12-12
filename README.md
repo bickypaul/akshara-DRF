@@ -24,8 +24,11 @@ DATABASES = {
     }
 }
 ```
-4. pip3 install django-postgres-copy
-5. python3 manage.py shell
+4. python3 manage.py makemigrations
+5. python3 manage.py migrate
+6. python3 manage.py createsuperuser
+7. pip3 install django-postgres-copy
+8. python3 manage.py shell
 ```
 from api.models import Boundary, GPContest, School
 from postgres_copy import CopyMapping
@@ -46,7 +49,7 @@ s.save()
 13. Model fields for School table are: schoolname, addition, subtraction, multiplication, division.
 14. CSV file for GPContest table is 'contest.csv'
 15. CSV file for School table is 'school.csv'
-14. After populating the database exit from the shell.
+16. After populating the database exit from the shell.
 
 
 ## How to execute it to run on your local machine

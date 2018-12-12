@@ -1,5 +1,4 @@
-from rest_framework import generics, mixins, status
-from rest_framework.renderers import JSONRenderer
+from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Boundary, GPContest, School
